@@ -2640,8 +2640,8 @@ importers:
   packages/sentry:
     dependencies:
       '@sentry/core':
-        specifier: ^10.75.3
-        version: 10.75.3
+        specifier: ^11.0.0
+        version: 11.0.0
       '@sentry/node-core':
         specifier: ^10.75.3
         version: 10.75.3(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.222.0(@opentelemetry/api@1.9.1))(@opentelemetry/instrumentation@0.222.0(@opentelemetry/api@1.9.1)(supports-color@7.2.0))(@opentelemetry/sdk-trace-base@2.11.0(@opentelemetry/api@1.9.1))
@@ -5051,9 +5051,17 @@ packages:
     resolution: {integrity: sha512-fO9PLmHdVURcSPUpWCItWAtgKiMwGdJHbovoSEyLplX5sxs2ugvI4CBPTrkkgqhObnZOD0CnWBKDzSVQYBKEyQ==}
     engines: {node: '>=14'}
 
+  '@sentry/conventions@0.23.0':
+    resolution: {integrity: sha512-+Euyo7CNVecoOusgUnq27oV97oshifgceKfnGnuKfXrPUVWA/cisvii3E1rlvy2yBrKvl9K1gCEo1Jqog5zjEQ==}
+    engines: {node: '>=14'}
+
   '@sentry/core@10.75.3':
     resolution: {integrity: sha512-QHgzobetM4UgEVbyqx9WPJzRq0YzyNg2CeeoM1Bf84ivYJXXiiVWxjzc0RHk3c0DHY5/6O6nJqos1xVL55dgZA==}
     engines: {node: '>=18'}
+
+  '@sentry/core@11.0.0':
+    resolution: {integrity: sha512-Sdmg21POKmNwZDz8pH/2FtilWeryh3yxhRxbfA1ph8SnX2DkXoqX6G+uXyjCSYagW2pefVklmSNeWHmUlSqioA==}
+    engines: {node: '>=20.19.0 <22.0.0 || >=22.12.0 <23.0.0 || >=23.2.0'}
 
   '@sentry/node-core@10.75.3':
     resolution: {integrity: sha512-nm3scqhE9Dx/ngE6q2hJW8Jvk+dVTjCm/KXC3CXH+0eBCzEuANH79qMwkmwMp5ixX+snlEOczA+ZCY+B4HfWQg==}
@@ -13149,9 +13157,15 @@ snapshots:
 
   '@sentry/conventions@0.16.0': {}
 
+  '@sentry/conventions@0.23.0': {}
+
   '@sentry/core@10.75.3':
     dependencies:
       '@sentry/conventions': 0.16.0
+
+  '@sentry/core@11.0.0':
+    dependencies:
+      '@sentry/conventions': 0.23.0
 
   '@sentry/node-core@10.75.3(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.222.0(@opentelemetry/api@1.9.1))(@opentelemetry/instrumentation@0.222.0(@opentelemetry/api@1.9.1)(supports-color@7.2.0))(@opentelemetry/sdk-trace-base@2.11.0(@opentelemetry/api@1.9.1))':
     dependencies:
