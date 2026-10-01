@@ -1,5 +1,11 @@
 # @prairielearn/ui
 
+## 4.1.1
+
+### Patch Changes
+
+- c71261f: Upgrade all JavaScript dependencies
+
 ## 4.1.0
 
 ### Minor Changes
